@@ -21,7 +21,7 @@ const navItems = ["About", "Skills", "Contact"];
 
 const appBarStyles = {
   boxShadow: "none",
-  backgroundColor:  "#DCD8EE",
+  backgroundColor: "#DCD8EE",
   width: { xm: "100%", sm: "100%", md: "100%", lg: "100%", xl: "100%" },
   margin: { xm: "0", sm: "0", md: "0%", lg: "0%", xl: "0%" },
   // boxShadow: "0 2px 0 -1px black",
@@ -30,7 +30,7 @@ const appBarStyles = {
 export default function DrawerAppBarNew(props) {
   const history = useHistory();
   const [pathName, setPathName] = useState(
-    `${history.location.pathname.slice(1)}`
+    "About" || `${history.location.pathname.slice(1)}`
   );
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -50,12 +50,22 @@ export default function DrawerAppBarNew(props) {
         textAlign: "center",
         backgroundColor: "#DCD8EE",
         color: "#413a5c",
-        fontWeight: '700',
-        height: "100%"
+        fontWeight: "700",
+        height: "100%",
       }}
     >
       <Typography variant="h6" sx={{ my: 2 }}>
-      <span style={{backgroundColor: '#413a5c', color: '#DCD8EE', borderRadius: '2px', padding: '0 11px'}}>J</span>ERONI
+        <span
+          style={{
+            backgroundColor: "#413a5c",
+            color: "#DCD8EE",
+            borderRadius: "2px",
+            padding: "0 11px",
+          }}
+        >
+          J
+        </span>
+        ERONI
       </Typography>
       <Divider />
       <List>
@@ -68,7 +78,11 @@ export default function DrawerAppBarNew(props) {
             >
               <NavLink
                 to={`/${item}`}
-                style={{ textDecoration: "none", color: "#413a5c", fontWeight: '600' }}
+                style={{
+                  textDecoration: "none",
+                  color: "#413a5c",
+                  fontWeight: "600",
+                }}
               >
                 <ListItemText id={item} primary={item} />
               </NavLink>
@@ -93,12 +107,14 @@ export default function DrawerAppBarNew(props) {
             sx={{
               display: { sm: "none" },
               marginLeft: "25px",
-              color: '#413a5c'
+              color: "#413a5c",
             }}
           >
             <MenuIcon />
             <div style={{ width: "72vw" }}>
-              <h3 style={{ textAlign: "center", color: "#413a5c" }}>{pathName}</h3>
+              <h3 style={{ textAlign: "center", color: "#413a5c" }}>
+                {pathName}
+              </h3>
             </div>
           </IconButton>
           <Typography
@@ -114,13 +130,23 @@ export default function DrawerAppBarNew(props) {
               marginLeft: { md: "15%", lg: "15%", xl: "15%" },
             }}
           >
-            <span style={{backgroundColor: '#413a5c', color: '#DCD8EE', borderRadius: '5px', padding: '0 25px'}}>J</span>ERONI
+            <span
+              style={{
+                backgroundColor: "#413a5c",
+                color: "#DCD8EE",
+                borderRadius: "5px",
+                padding: "0 25px",
+              }}
+            >
+              J
+            </span>
+            ERONI
           </Typography>
           <Box
             sx={{
               display: {
                 xs: "none",
-                sm: "block"
+                sm: "block",
               },
               marginRight: { sm: "0", md: "10%", lg: "10%", xl: "10%" },
             }}
