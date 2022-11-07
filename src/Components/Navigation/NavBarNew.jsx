@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
@@ -29,9 +30,13 @@ const appBarStyles = {
 
 export default function DrawerAppBarNew(props) {
   const history = useHistory();
-  const [pathName, setPathName] = useState(
-    "About" || `${history.location.pathname.slice(1)}`
-  );
+  const [pathName, setPathName] = useState('');
+
+  useEffect(()=>{
+    setPathName(history.location.pathname.slice(1));
+    console.log("Running...");
+  }, [])
+
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
