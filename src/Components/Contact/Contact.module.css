@@ -1,0 +1,48 @@
+.contact{
+    width: 70%;
+    margin: auto;
+    margin-top: 150px;
+    color: #DCD8EE;
+}
+.contact div > p{
+    font-size: 1.4rem;
+}
+.contact .links{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 5vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact .links .icons:hover{
+    color: lightblue;
+    transform: perspective(30rem);
+    transition: all 0.4s ease-out;
+}
+.contact .links .icons:active{
+    color: #413a5c;
+}
+@media only screen and (max-width: 600px){
+    .contact{
+        width: 90%;
+    }
+    .contact .links{
+        flex-wrap: wrap;
+        position: relative;
+        gap: 1.2rem;
+        margin-top: 20vh;
+    }
+   
+}
+@media only screen and (max-width: 901px){
+    .contact .links{
+        position: relative;
+        margin-top: 20vh;
+    }
+    
+}

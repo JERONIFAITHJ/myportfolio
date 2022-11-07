@@ -1,0 +1,17 @@
+.active {
+  color: #413a5c !important;
+  font-weight: 700;
+  font-size: 30px;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+}
+.dummy{}
+.navLink {
+  text-decoration: none;
+  margin-left: 30px;
+  color: #413a5c;
+}
+.navLink:hover {
+  color: black;
+  transform: perspective(25rem);
+}

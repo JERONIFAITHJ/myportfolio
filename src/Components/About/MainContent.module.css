@@ -1,0 +1,44 @@
+.mainContent {
+  font-size: 1.4rem;
+  width: 60%;
+  margin: auto;
+  color: #DCD8EE;
+  margin-top: 150px;
+  text-align: start;
+  /* background: linear-gradient(to right, #30ffaf, #30ffaf); */
+  border-radius: 15px;
+}
+@media only screen and (max-width: 600px) {
+  .mainContent {
+    width: 90%;
+    margin-top: 15vh;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .mainContent {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .mainContent {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .mainContent {
+    width: 65%;
+    padding: 2%;
+  }
+}
+.contact {
+  color: lightblue;
+  font-style: italic;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contact:hover {
+  color: lightslategrey;
+}
+.contact:active {
+  color: white;
+}

@@ -1,0 +1,71 @@
+.skills{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 150px;
+    color: #DCD8EE;
+    /* gap: 10px; */
+}
+.skills .tableContainers{
+    width: 49%;
+    border: 2px solid #DCD8EE;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.skills div table{
+    width: 100%;
+}
+.skills table th{
+    font-size: 1.5rem !important;
+    color: #b3a8eb;
+}
+.skills table td,th{
+    padding: 15px 0;
+    font-size: 1.2rem;
+}
+.explanation{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .skills {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .skills .tableContainers{
+        width: 100%;
+    }
+    .skills table{
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 899px) {
+    .skills {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .skills .tableContainers{
+        width: 100%;
+    }
+    .skills table{
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 901px) {
+    .skills {
+      flex-direction: column;
+    }
+    .skills .tableContainers{
+        width: 100%;
+    }
+    .skills table{
+        width: 100%;
+    }
+  }
+  @media only screen and (min-width: 1201px) {
+    .skills {
+      
+    }
+  }
